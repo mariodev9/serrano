@@ -11,7 +11,11 @@ export default function AccountingTable() {
   return (
     <DataTable headers={headersTable}>
       {transactions?.map((account) => (
-        <AccountingItemTable setAccountings={setTransactions} {...account} />
+        <AccountingItemTable
+          key={account._id}
+          setAccountings={setTransactions}
+          {...account}
+        />
       ))}
     </DataTable>
   );

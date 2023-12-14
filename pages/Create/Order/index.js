@@ -166,7 +166,7 @@ export default function CreateOrderPage() {
             <HStack spacing={2} mb={3}>
               {materials.map((material, index) => (
                 <Box
-                  key={index}
+                  key={material}
                   bg="#000"
                   color={"#fff"}
                   p={2}

@@ -124,6 +124,7 @@ export default function Layout({ children }) {
                   <Flex direction={"column"}>
                     {menuList.map((item) => (
                       <Flex
+                        key={item.title}
                         onClick={() => handleRedirect(item.href)}
                         cursor={"pointer"}
                         p={"8px 12px"}
@@ -175,6 +176,7 @@ export default function Layout({ children }) {
                     <Flex direction={"column"}>
                       {menuList.map((item) => (
                         <Flex
+                          key={item.title}
                           onClick={() => handleRedirect(item.href)}
                           cursor={"pointer"}
                           p={"8px 12px"}

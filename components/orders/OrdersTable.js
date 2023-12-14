@@ -18,7 +18,7 @@ export default function OrdersTable() {
   return (
     <DataTable headers={headersTable}>
       {orders?.map((order) => (
-        <OrderItemTable setOrders={setOrders} {...order} />
+        <OrderItemTable key={order._id} setOrders={setOrders} {...order} />
       ))}
     </DataTable>
   );

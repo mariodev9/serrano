@@ -25,7 +25,7 @@ export default function DataTable({ children, headers }) {
         <Thead bg={"#000"}>
           <Tr>
             {headers.map((header) => (
-              <ThCustomize> {header}</ThCustomize>
+              <ThCustomize key={header}>{header}</ThCustomize>
             ))}
           </Tr>
         </Thead>
